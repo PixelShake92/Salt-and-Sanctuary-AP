@@ -73,7 +73,7 @@ Flips will confirm the patch was applied successfully. If it reports a checksum 
 
 1. Launch the patched `salt.exe`.
 2. Start or load a save file.
-3. The Archipelago connection UI will appear in the top-left corner of the screen.
+3. The Archipelago connection is done through a text file called archipelago.txt. This is located in Salt and Sanctuary game folder usually in documents or the like. Saves are kept here as well.
 4. Enter your **server address**, **slot name**, and **password** (if any).
 5. Press Connect. The client will confirm when it is connected and your slot is found.
 
