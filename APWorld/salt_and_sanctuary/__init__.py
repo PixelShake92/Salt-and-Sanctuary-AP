@@ -25,7 +25,7 @@ class SaltSanctuaryWebWorld(WebWorld):
             "English",
             "setup_en.md",
             "setup/en",
-            ["YourName"]
+            ["PixelShake92"]
         )
     ]
 
