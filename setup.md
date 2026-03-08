@@ -5,7 +5,7 @@
 - **Salt and Sanctuary** (PC, Steam version)
 - **Flips** (Floating IPS patcher) — [download here](https://github.com/Alcaro/Flips/releases)
 - **Salt and Sanctuary AP Patch** (`.bps` file) — included with your Archipelago installation
-- **Archipelago** 0.6.0 or later — [archipelago.gg](https://archipelago.gg)
+- **Archipelago** 0.6.6 or later — [archipelago.gg](https://archipelago.gg)
 
 ---
 
