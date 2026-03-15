@@ -1,9 +1,10 @@
-from typing import Dict, Any
-from BaseClasses import MultiWorld, Tutorial, ItemClassification, Region
+# Salt and Sanctuary Archipelago World
+from typing import Dict, Any, ClassVar
+from BaseClasses import Item, MultiWorld, Tutorial, ItemClassification, Location, Region
 from worlds.AutoWorld import World, WebWorld
 
-from .Items import SaltSanctuaryItem, item_table
-from .Locations import SaltSanctuaryLocation, location_table
+from .Items import item_table
+from .Locations import location_table
 from .Regions import (create_regions, set_region_rules, LEVER_ITEM_NAMES,
                       LEVERS, LEVER_ITEM_IDS, LEVER_LOC_IDS,
                       LEVER_ITEM_BASE_ID, LEVER_LOC_BASE_ID)
@@ -13,6 +14,7 @@ from .SkillTreeLogic import create_combined_rules, create_level_rules
 from .LevelLocations import level_locations, get_level_locations_for_mode
 from .MultiItemLocations import multi_item_locations, get_multi_item_flags
 from .KillLocations import kill_locations, KILL_BASE_ID
+from .ShopLocations import shop_locations, SHOP_BASE_ID
 from .Options import SaltSanctuaryOptions
 
 
@@ -25,9 +27,17 @@ class SaltSanctuaryWebWorld(WebWorld):
             "English",
             "setup_en.md",
             "setup/en",
-            ["PixelShake92"]
+            ["YourName"]
         )
     ]
+
+
+class SaltSanctuaryItem(Item):
+    game = "Salt and Sanctuary"
+
+
+class SaltSanctuaryLocation(Location):
+    game = "Salt and Sanctuary"
 
 
 # Build item name to ID mapping
@@ -123,6 +133,11 @@ class SaltSanctuaryWorld(World):
         if kill_sanity:
             total_locations += len(kill_locations)
         
+        # Add shop sanity locations if enabled
+        shop_sanity = self.options.shop_sanity.value
+        if shop_sanity:
+            total_locations += len(shop_locations)
+        
         items_created = 0
         
         # Starting items - player gets these automatically
@@ -156,7 +171,7 @@ class SaltSanctuaryWorld(World):
                 item = self.create_item(item_name)
                 self.multiworld.push_precollected(item)
         
-        # Add all PROGRESSION items (required) - except starting items
+        # First: Add all PROGRESSION items (required) - except starting items
         for item_name, item_data in item_table.items():
             if item_data.classification == ItemClassification.progression:
                 if item_name in starting_items:
@@ -165,20 +180,20 @@ class SaltSanctuaryWorld(World):
                 self.multiworld.itempool.append(item)
                 items_created += 1
         
-        # Add all USEFUL items (important)
+        # Second: Add all USEFUL items (important)
         for item_name, item_data in item_table.items():
             if item_data.classification == ItemClassification.useful:
                 item = self.create_item(item_name)
                 self.multiworld.itempool.append(item)
                 items_created += 1
         
-        # Add lever items (always shuffled, progression)
+        # Third: Add lever items (always shuffled, progression)
         for lever in LEVERS:
             item = self.create_item(lever.item_name)
             self.multiworld.itempool.append(item)
             items_created += 1
         
-        # Add skill items if skill tree randomized (mode 1 or 2)
+        # Fourth: Add skill items if skill tree randomized (mode 1 or 2)
         if skill_tree_enabled:
             # Track which items were precollected as starting class unlocks
             starting_class_unlocks = {
@@ -206,7 +221,7 @@ class SaltSanctuaryWorld(World):
                     self.multiworld.itempool.append(item)
                     items_created += 1
         
-        # Add FILLER items only to fill remaining slots
+        # Fifth: Add FILLER items only to fill remaining slots
         filler_items = [name for name, data in item_table.items() 
                        if data.classification == ItemClassification.filler]
         
@@ -267,6 +282,13 @@ class SaltSanctuaryWorld(World):
                         region = self.multiworld.get_region("Menu", self.player)
                 location = SaltSanctuaryLocation(self.player, loc_name, loc_data.code, region)
                 region.locations.append(location)
+        
+        # Add shop sanity locations if enabled (placed in Menu - sanctuaries can be anywhere)
+        if self.options.shop_sanity.value:
+            menu_region = self.multiworld.get_region("Menu", self.player)
+            for loc_name, loc_data in shop_locations.items():
+                location = SaltSanctuaryLocation(self.player, loc_name, loc_data.code, menu_region)
+                menu_region.locations.append(location)
     
     def set_rules(self) -> None:
         # Apply region connection rules (brands, keys, levers)
@@ -350,4 +372,5 @@ class SaltSanctuaryWorld(World):
             "skill_tree_hint_progression": self.options.skill_tree_hint_progression.value,
             "include_unspeakable_deep": self.options.include_unspeakable_deep.value,
             "kill_sanity": self.options.kill_sanity.value,
+            "shop_sanity": self.options.shop_sanity.value,
         }

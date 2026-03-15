@@ -1017,6 +1017,7 @@ def set_region_rules(world: 'SaltSanctuaryWorld') -> None:
 
     lever_rule("Castle of Storms post Shadowflip -> Red Hall of Cages",
          ["Red Hall of Cages - Mine Shaft", "Red Hall of Cages - Dungeon to Cave Gate",
+          "Castle of Storms - Castle Bridge",
           "Red Hall of Cages - Double Elevator", "Red Hall of Cages - Mid Shortcut",
           "Red Hall of Cages - Shortcut Door"])
     lever_rule("Salt Alkymancery -> Red Hall of Cages",

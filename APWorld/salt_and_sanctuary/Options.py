@@ -1,3 +1,4 @@
+# Options for Salt and Sanctuary
 from dataclasses import dataclass
 from Options import Toggle, Choice, PerGameCommonOptions
 
@@ -130,6 +131,16 @@ class KillSanity(Toggle):
     default = False
 
 
+class ShopSanity(Toggle):
+    """
+    Adds shop purchases as AP location checks.
+    Each item in every shop (sanctuary NPCs, map NPCs, special vendors)
+    becomes a location check when purchased. Adds 872 locations.
+    """
+    display_name = "Shop Sanity"
+    default = False
+
+
 class IncludeUnspeakableDeep(Toggle):
     """
     Include the Unspeakable Deep boss and its associated locations.
@@ -162,4 +173,5 @@ class SaltSanctuaryOptions(PerGameCommonOptions):
     split_multi_item_locations: SplitMultiItemLocations
     skill_tree_hint_progression: SkillTreeHintProgression
     kill_sanity: KillSanity
+    shop_sanity: ShopSanity
     include_unspeakable_deep: IncludeUnspeakableDeep
