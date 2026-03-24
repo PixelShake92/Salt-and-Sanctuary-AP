@@ -1,6 +1,3 @@
-# Region data for Salt and Sanctuary APWorld
-# Sub-region system based on working reference logic
-# Provides granular entrance-based logic for brand/key/lever gates
 from typing import Dict, List, Set, Optional, NamedTuple, TYPE_CHECKING
 from BaseClasses import Region, Entrance, Item, ItemClassification, Location
 from .Items import SaltSanctuaryItem
@@ -9,11 +6,10 @@ from .Locations import SaltSanctuaryLocation
 if TYPE_CHECKING:
     from . import SaltSanctuaryWorld
 
-# ============================================================================
+
 # SUB-REGION DEFINITIONS
 # These divide each game area into sections gated by bosses, keys, brands, 
 # or levers. The connections between sub-regions carry the logic rules.
-# ============================================================================
 
 SUBREGION_NAMES = [
     "Menu",
@@ -215,29 +211,6 @@ def get_subregion_for_location(loc_name: str, old_region: str) -> str:
         return _LOCATION_OVERRIDES[loc_name]
     return _DEFAULT_SUBREGION.get(old_region, old_region)
 
-
-# ============================================================================
-# LEVER / GATE DATA
-# Levers are Character entities that use script command 37 to:
-#   - Call MapMgr.FireSequence(c.drops[]) to open gates  
-#   - Call PlayerMgr.SetMainPlayerFlag(c.flag) to persist state
-#
-# Each lever has:
-#   item_name:       AP item name (gates entrance rules)
-#   sub_region:      which sub-region the lever location lives in
-#   location_name:   AP location name (client sends check when pulled)
-#   game_flag:       c.flag - the player flag set by SetMainPlayerFlag()
-#   game_sequences:  c.drops[] - sequence names fired by MapMgr.FireSequence()
-#
-# The client mod should:
-#   ON RECEIVING LEVER ITEM:
-#     PlayerMgr.SetMainPlayerFlag(game_flag);
-#     MapMgr.FireSequence(game_sequences);  // if on same map
-#   ON PLAYER PULLING LEVER IN-GAME:
-#     Intercept → send AP location check (don't let vanilla activation happen)
-#
-# Lever data populated from dnSpy inspection of CharScript entities
-# ============================================================================
 
 LEVER_ITEM_BASE_ID = 283640700
 LEVER_LOC_BASE_ID = 283660400

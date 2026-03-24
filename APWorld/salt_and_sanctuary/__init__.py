@@ -1,4 +1,3 @@
-# Salt and Sanctuary Archipelago World
 from typing import Dict, Any, ClassVar
 from BaseClasses import Item, MultiWorld, Tutorial, ItemClassification, Location, Region
 from worlds.AutoWorld import World, WebWorld
@@ -27,7 +26,7 @@ class SaltSanctuaryWebWorld(WebWorld):
             "English",
             "setup_en.md",
             "setup/en",
-            ["YourName"]
+            ["PixelShake92"]
         )
     ]
 
@@ -62,6 +61,8 @@ for name, data in multi_item_locations.items():
 for name, loc_id in LEVER_LOC_IDS.items():
     _location_name_to_id[name] = loc_id
 for name, data in kill_locations.items():
+    _location_name_to_id[name] = data.code
+for name, data in shop_locations.items():
     _location_name_to_id[name] = data.code
 
 
@@ -171,7 +172,7 @@ class SaltSanctuaryWorld(World):
                 item = self.create_item(item_name)
                 self.multiworld.push_precollected(item)
         
-        # First: Add all PROGRESSION items (required) - except starting items
+        # Progression items (except starting items)
         for item_name, item_data in item_table.items():
             if item_data.classification == ItemClassification.progression:
                 if item_name in starting_items:
@@ -180,20 +181,20 @@ class SaltSanctuaryWorld(World):
                 self.multiworld.itempool.append(item)
                 items_created += 1
         
-        # Second: Add all USEFUL items (important)
+        # Useful items
         for item_name, item_data in item_table.items():
             if item_data.classification == ItemClassification.useful:
                 item = self.create_item(item_name)
                 self.multiworld.itempool.append(item)
                 items_created += 1
         
-        # Third: Add lever items (always shuffled, progression)
+        # Lever items
         for lever in LEVERS:
             item = self.create_item(lever.item_name)
             self.multiworld.itempool.append(item)
             items_created += 1
         
-        # Fourth: Add skill items if skill tree randomized (mode 1 or 2)
+        # Skill items (if randomized)
         if skill_tree_enabled:
             # Track which items were precollected as starting class unlocks
             starting_class_unlocks = {
@@ -221,13 +222,36 @@ class SaltSanctuaryWorld(World):
                     self.multiworld.itempool.append(item)
                     items_created += 1
         
-        # Fifth: Add FILLER items only to fill remaining slots
-        filler_items = [name for name, data in item_table.items() 
-                       if data.classification == ItemClassification.filler]
+        # Filler items
+        # Stones and devotion materials appear 4x more often
+        _BOOSTED_PREFIXES = (
+            "statue_",  # Stone NPCs
+        )
+        _BOOSTED_GAME_NAMES = {
+            "amber_blaze", "amber_flame", "amber_nova", "amber_spark",
+            "beast_blaze", "beast_flame", "beast_nova", "beast_spark",
+            "black_blaze", "black_flame", "black_nova", "black_spark",
+            "blue_blaze", "blue_flame", "blue_nova", "blue_spark", "blue_sky",
+            "drowning_blaze", "drowning_flame", "drowning_nova", "drowning_spark",
+            "red_blaze", "red_flame", "red_nova", "red_spark",
+            "white_blaze", "white_flame", "white_nova", "white_spark",
+        }
+        
+        weighted_filler = []
+        for name, data in item_table.items():
+            if data.classification != ItemClassification.filler:
+                continue
+            is_boosted = (
+                any(data.game_name.startswith(p) for p in _BOOSTED_PREFIXES)
+                or data.game_name in _BOOSTED_GAME_NAMES
+            )
+            copies = 4 if is_boosted else 1
+            for _ in range(copies):
+                weighted_filler.append(name)
         
         filler_needed = total_locations - items_created
         for i in range(max(0, filler_needed)):
-            filler_name = filler_items[i % len(filler_items)]
+            filler_name = weighted_filler[i % len(weighted_filler)]
             item = self.create_item(filler_name)
             self.multiworld.itempool.append(item)
     
