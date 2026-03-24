@@ -1055,269 +1055,269 @@ shop_locations: Dict[str, ShopLocationData] = {
         item_name="ring_mp_moat",
         shop_name="Unknown Cleric Shop",
     ),
-    "Iron Ones Cleric Prayers - heal": ShopLocationData(
+    "Devara's Light Cleric Prayers - heal": ShopLocationData(
         code=283720130,
         dialog_id=7,
         node_id=4,
         item_index=0,
         item_name="heal",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_will": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_will": ShopLocationData(
         code=283720131,
         dialog_id=7,
         node_id=4,
         item_index=1,
         item_name="holy_will",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_bandage": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_bandage": ShopLocationData(
         code=283720132,
         dialog_id=7,
         node_id=4,
         item_index=2,
         item_name="holy_bandage",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - heal2": ShopLocationData(
+    "Devara's Light Cleric Prayers - heal2": ShopLocationData(
         code=283720133,
         dialog_id=7,
         node_id=4,
         item_index=3,
         item_name="heal2",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - heal3": ShopLocationData(
+    "Devara's Light Cleric Prayers - heal3": ShopLocationData(
         code=283720134,
         dialog_id=7,
         node_id=4,
         item_index=4,
         item_name="heal3",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_buff": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_buff": ShopLocationData(
         code=283720135,
         dialog_id=7,
         node_id=4,
         item_index=5,
         item_name="holy_buff",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_light": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_light": ShopLocationData(
         code=283720136,
         dialog_id=7,
         node_id=4,
         item_index=6,
         item_name="holy_light",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_cone (1)": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_cone (1)": ShopLocationData(
         code=283720137,
         dialog_id=7,
         node_id=4,
         item_index=7,
         item_name="holy_cone",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_buff2": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_buff2": ShopLocationData(
         code=283720138,
         dialog_id=7,
         node_id=4,
         item_index=8,
         item_name="holy_buff2",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_orbits (1)": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_orbits (1)": ShopLocationData(
         code=283720139,
         dialog_id=7,
         node_id=4,
         item_index=9,
         item_name="holy_orbits",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_cleanse (1)": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_cleanse (1)": ShopLocationData(
         code=283720140,
         dialog_id=7,
         node_id=4,
         item_index=10,
         item_name="holy_cleanse",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_phys_def": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_phys_def": ShopLocationData(
         code=283720141,
         dialog_id=7,
         node_id=4,
         item_index=11,
         item_name="holy_phys_def",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_mag_def": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_mag_def": ShopLocationData(
         code=283720142,
         dialog_id=7,
         node_id=4,
         item_index=12,
         item_name="holy_mag_def",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - inquisitor": ShopLocationData(
+    "Devara's Light Cleric Prayers - inquisitor": ShopLocationData(
         code=283720143,
         dialog_id=7,
         node_id=4,
         item_index=13,
         item_name="inquisitor",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_cone (2)": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_cone (2)": ShopLocationData(
         code=283720144,
         dialog_id=7,
         node_id=4,
         item_index=14,
         item_name="holy_cone",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - monsterwitch": ShopLocationData(
+    "Devara's Light Cleric Prayers - monsterwitch": ShopLocationData(
         code=283720145,
         dialog_id=7,
         node_id=4,
         item_index=15,
         item_name="monsterwitch",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_orbits (2)": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_orbits (2)": ShopLocationData(
         code=283720146,
         dialog_id=7,
         node_id=4,
         item_index=16,
         item_name="holy_orbits",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - fauxjester": ShopLocationData(
+    "Devara's Light Cleric Prayers - fauxjester": ShopLocationData(
         code=283720147,
         dialog_id=7,
         node_id=4,
         item_index=17,
         item_name="fauxjester",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_revive": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_revive": ShopLocationData(
         code=283720148,
         dialog_id=7,
         node_id=4,
         item_index=18,
         item_name="holy_revive",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - alchemist": ShopLocationData(
+    "Devara's Light Cleric Prayers - alchemist": ShopLocationData(
         code=283720149,
         dialog_id=7,
         node_id=4,
         item_index=19,
         item_name="alchemist",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_cleanse (2)": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_cleanse (2)": ShopLocationData(
         code=283720150,
         dialog_id=7,
         node_id=4,
         item_index=20,
         item_name="holy_cleanse",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Prayers - holy_blade": ShopLocationData(
+    "Devara's Light Cleric Prayers - holy_blade": ShopLocationData(
         code=283720151,
         dialog_id=7,
         node_id=4,
         item_index=21,
         item_name="holy_blade",
-        shop_name="Iron Ones Cleric Prayers",
+        shop_name="Devara's Light Cleric Prayers",
     ),
-    "Iron Ones Cleric Shop - health_shard": ShopLocationData(
+    "Devara's Light Cleric Shop - health_shard": ShopLocationData(
         code=283720152,
         dialog_id=7,
         node_id=5,
         item_index=0,
         item_name="health_shard",
-        shop_name="Iron Ones Cleric Shop",
+        shop_name="Devara's Light Cleric Shop",
     ),
-    "Iron Ones Cleric Shop - waterpot": ShopLocationData(
+    "Devara's Light Cleric Shop - waterpot": ShopLocationData(
         code=283720153,
         dialog_id=7,
         node_id=5,
         item_index=1,
         item_name="waterpot",
-        shop_name="Iron Ones Cleric Shop",
+        shop_name="Devara's Light Cleric Shop",
     ),
-    "Iron Ones Cleric Shop - buff_holy": ShopLocationData(
+    "Devara's Light Cleric Shop - buff_holy": ShopLocationData(
         code=283720154,
         dialog_id=7,
         node_id=5,
         item_index=2,
         item_name="buff_holy",
-        shop_name="Iron Ones Cleric Shop",
+        shop_name="Devara's Light Cleric Shop",
     ),
-    "Iron Ones Cleric Shop - cleric_helm": ShopLocationData(
+    "Devara's Light Cleric Shop - cleric_helm": ShopLocationData(
         code=283720155,
         dialog_id=7,
         node_id=5,
         item_index=3,
         item_name="cleric_helm",
-        shop_name="Iron Ones Cleric Shop",
+        shop_name="Devara's Light Cleric Shop",
     ),
-    "Iron Ones Cleric Shop - cleric_armor": ShopLocationData(
+    "Devara's Light Cleric Shop - cleric_armor": ShopLocationData(
         code=283720156,
         dialog_id=7,
         node_id=5,
         item_index=4,
         item_name="cleric_armor",
-        shop_name="Iron Ones Cleric Shop",
+        shop_name="Devara's Light Cleric Shop",
     ),
-    "Iron Ones Cleric Shop - cleric_boots": ShopLocationData(
+    "Devara's Light Cleric Shop - cleric_boots": ShopLocationData(
         code=283720157,
         dialog_id=7,
         node_id=5,
         item_index=5,
         item_name="cleric_boots",
-        shop_name="Iron Ones Cleric Shop",
+        shop_name="Devara's Light Cleric Shop",
     ),
-    "Iron Ones Cleric Shop - mace_flanged": ShopLocationData(
+    "Devara's Light Cleric Shop - mace_flanged": ShopLocationData(
         code=283720158,
         dialog_id=7,
         node_id=5,
         item_index=6,
         item_name="mace_flanged",
-        shop_name="Iron Ones Cleric Shop",
+        shop_name="Devara's Light Cleric Shop",
     ),
-    "Iron Ones Cleric Shop - shield_cleric": ShopLocationData(
+    "Devara's Light Cleric Shop - shield_cleric": ShopLocationData(
         code=283720159,
         dialog_id=7,
         node_id=5,
         item_index=7,
         item_name="shield_cleric",
-        shop_name="Iron Ones Cleric Shop",
+        shop_name="Devara's Light Cleric Shop",
     ),
-    "Iron Ones Cleric Shop - ring_wisdom": ShopLocationData(
+    "Devara's Light Cleric Shop - ring_wisdom": ShopLocationData(
         code=283720160,
         dialog_id=7,
         node_id=5,
         item_index=8,
         item_name="ring_wisdom",
-        shop_name="Iron Ones Cleric Shop",
+        shop_name="Devara's Light Cleric Shop",
     ),
-    "Iron Ones Cleric Shop - bull": ShopLocationData(
+    "Devara's Light Cleric Shop - bull": ShopLocationData(
         code=283720161,
         dialog_id=7,
         node_id=5,
         item_index=9,
         item_name="bull",
-        shop_name="Iron Ones Cleric Shop",
+        shop_name="Devara's Light Cleric Shop",
     ),
-    "Iron Ones Cleric Shop - ring_mp_moat": ShopLocationData(
+    "Devara's Light Cleric Shop - ring_mp_moat": ShopLocationData(
         code=283720162,
         dialog_id=7,
         node_id=5,
         item_index=10,
         item_name="ring_mp_moat",
-        shop_name="Iron Ones Cleric Shop",
+        shop_name="Devara's Light Cleric Shop",
     ),
     "Devara Merchant Shop - health_shard": ShopLocationData(
         code=283720163,
@@ -1567,141 +1567,141 @@ shop_locations: Dict[str, ShopLocationData] = {
         item_name="wand_wood",
         shop_name="Devara Mage Items",
     ),
-    "Three Merchant Shop - health_shard": ShopLocationData(
+    "Devara's Light Merchant Shop - health_shard": ShopLocationData(
         code=283720194,
         dialog_id=10,
         node_id=4,
         item_index=0,
         item_name="health_shard",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - waterpot": ShopLocationData(
+    "Devara's Light Merchant Shop - waterpot": ShopLocationData(
         code=283720195,
         dialog_id=10,
         node_id=4,
         item_index=1,
         item_name="waterpot",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - arrow": ShopLocationData(
+    "Devara's Light Merchant Shop - arrow": ShopLocationData(
         code=283720196,
         dialog_id=10,
         node_id=4,
         item_index=2,
         item_name="arrow",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - bolt": ShopLocationData(
+    "Devara's Light Merchant Shop - bolt": ShopLocationData(
         code=283720197,
         dialog_id=10,
         node_id=4,
         item_index=3,
         item_name="bolt",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - flintshot": ShopLocationData(
+    "Devara's Light Merchant Shop - flintshot": ShopLocationData(
         code=283720198,
         dialog_id=10,
         node_id=4,
         item_index=4,
         item_name="flintshot",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - throw_dagger": ShopLocationData(
+    "Devara's Light Merchant Shop - throw_dagger": ShopLocationData(
         code=283720199,
         dialog_id=10,
         node_id=4,
         item_index=5,
         item_name="throw_dagger",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - torch_oil": ShopLocationData(
+    "Devara's Light Merchant Shop - torch_oil": ShopLocationData(
         code=283720200,
         dialog_id=10,
         node_id=4,
         item_index=6,
         item_name="torch_oil",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - buff_holy": ShopLocationData(
+    "Devara's Light Merchant Shop - buff_holy": ShopLocationData(
         code=283720201,
         dialog_id=10,
         node_id=4,
         item_index=7,
         item_name="buff_holy",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - salt1": ShopLocationData(
+    "Devara's Light Merchant Shop - salt1": ShopLocationData(
         code=283720202,
         dialog_id=10,
         node_id=4,
         item_index=8,
         item_name="salt1",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - white_spark": ShopLocationData(
+    "Devara's Light Merchant Shop - white_spark": ShopLocationData(
         code=283720203,
         dialog_id=10,
         node_id=4,
         item_index=9,
         item_name="white_spark",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - beast_spark": ShopLocationData(
+    "Devara's Light Merchant Shop - beast_spark": ShopLocationData(
         code=283720204,
         dialog_id=10,
         node_id=4,
         item_index=10,
         item_name="beast_spark",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - return_bell": ShopLocationData(
+    "Devara's Light Merchant Shop - return_bell": ShopLocationData(
         code=283720205,
         dialog_id=10,
         node_id=4,
         item_index=11,
         item_name="return_bell",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - ring_saltseek": ShopLocationData(
+    "Devara's Light Merchant Shop - ring_saltseek": ShopLocationData(
         code=283720206,
         dialog_id=10,
         node_id=4,
         item_index=12,
         item_name="ring_saltseek",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - ring_salt": ShopLocationData(
+    "Devara's Light Merchant Shop - ring_salt": ShopLocationData(
         code=283720207,
         dialog_id=10,
         node_id=4,
         item_index=13,
         item_name="ring_salt",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - antidote": ShopLocationData(
+    "Devara's Light Merchant Shop - antidote": ShopLocationData(
         code=283720208,
         dialog_id=10,
         node_id=4,
         item_index=14,
         item_name="antidote",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - charm_lantern": ShopLocationData(
+    "Devara's Light Merchant Shop - charm_lantern": ShopLocationData(
         code=283720209,
         dialog_id=10,
         node_id=4,
         item_index=15,
         item_name="charm_lantern",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
-    "Three Merchant Shop - throw_potato": ShopLocationData(
+    "Devara's Light Merchant Shop - throw_potato": ShopLocationData(
         code=283720210,
         dialog_id=10,
         node_id=4,
         item_index=16,
         item_name="throw_potato",
-        shop_name="Three Merchant Shop",
+        shop_name="Devara's Light Merchant Shop",
     ),
     "Fire and Sky Merchant Shop - health_shard": ShopLocationData(
         code=283720211,
@@ -4599,7 +4599,7 @@ shop_locations: Dict[str, ShopLocationData] = {
         item_name="holy_blade",
         shop_name="Fire and Sky Cleric Prayers",
     ),
-    "Fire and Sky Cleric Shop - health_shard": ShopLocationData(
+    "Stone Roots Cleric Shop - health_shard": ShopLocationData(
         code=283720573,
         dialog_id=53,
         node_id=5,
@@ -4607,7 +4607,7 @@ shop_locations: Dict[str, ShopLocationData] = {
         item_name="health_shard",
         shop_name="Fire and Sky Cleric Shop",
     ),
-    "Fire and Sky Cleric Shop - buff_holy": ShopLocationData(
+    "Stone Roots Cleric Shop - buff_holy": ShopLocationData(
         code=283720574,
         dialog_id=53,
         node_id=5,
