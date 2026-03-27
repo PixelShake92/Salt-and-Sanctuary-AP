@@ -76,6 +76,7 @@ Flips will confirm the patch was applied successfully. If it reports a checksum 
 3. The Archipelago connection is done through a text file called archipelago.txt. This is located in Salt and Sanctuary game folder usually in your documents folder inside C:\Users\*\Documents\Salt and Sanctuary. Saves are kept here as well.
 4. Enter your **server address**, **slot name**, and **password** (if any).
 5. Save the file and open the game. The client will confirm when it is connected and your slot is found by showing AP Connected in green at the top of your screen or red if it didn't work. This won't appear UNTIL YOU ARE IN GAME!
+6. ## IF RUNNING A NEW SEED DELETE  the old ap_skill_bonuses_player.txt and old ap_received_index_player.txt
 
 > If the game cannot connect, check that your server address includes the port (e.g. `archipelago.gg:12345`) and that your slot name exactly matches the one used during generation.
 
