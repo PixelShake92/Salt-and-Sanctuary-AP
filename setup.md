@@ -101,10 +101,10 @@ You have two APWorlds installed. Remove all copies and reinstall just one. See S
 **Flips reports a checksum mismatch**
 You are trying to patch a file that has already been patched, or the wrong file. Restore `salt-backup.exe` to `salt.exe` and try again.
 
-## Client connects but checks are not sending**
+**Client connects but checks are not sending**
 Verify the APWorld version used to generate the room matches the installed APWorld. Regenerate if in doubt — item and location IDs must match exactly between the APWorld and the client mod. 
 
-**Be sure to delete the old ap_skill_bonuses_player.txt and old ap_received_index_player.txt
+**Be sure to delete the old ap_skill_bonuses_player.txt and old ap_received_index_player.txt**
 
 
 **Options listed in my YAML are reported as invalid**
